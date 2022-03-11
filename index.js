@@ -1,9 +1,23 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  newWord = reverseWord(word);
+  return word === newWord ? true : false
+}
+
+function reverseWord(str) {
+  arrStr = Array.from(str);
+  revStr = arrStr.reverse();
+  joinStr = revStr.join("");
+  return joinStr;
 }
 
 /* 
   Add your pseudocode here
+  call function isPalindrome with argument string
+  if string is the same when reversed
+  return true
+  if string is not the same
+  return false
 */
 
 /*
